@@ -43,6 +43,7 @@
     lxappearance
     unzip
     nixfmt-classic
+    gh
   ];
   imports = [ 
     ./nix.conf
