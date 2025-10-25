@@ -1,9 +1,6 @@
 { config, pkgs, ... }: {
   imports = [ ./hardware-configuration.nix ];
 
-  boot.loader.systemd-boot.enable = true;
-  boot.loader.efi.canTouchEfiVariables = true;
-
   nix.settings.extra-experimental-features = [ "nix-command" "flakes" ];
   networking.hostName = "beanie";
   networking.networkmanager.enable = true;
